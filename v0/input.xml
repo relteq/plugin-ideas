@@ -1,0 +1,11 @@
+<simulation>
+  <node id="1" />
+
+  <controller node_id="1">
+    <plugin language="ruby">
+      def step time
+        puts "stepping ctrl at #{@node} at time #{time}"
+      end
+    </plugin>
+  </controller>
+</simulation>

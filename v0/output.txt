@@ -1,0 +1,11 @@
+stepping ctrl at <node id="1"/> at time 0
+stepping ctrl at <node id="1"/> at time 1
+stepping ctrl at <node id="1"/> at time 2
+stepping ctrl at <node id="1"/> at time 3
+stepping ctrl at <node id="1"/> at time 4
+stepping ctrl at <node id="1"/> at time 5
+stepping ctrl at <node id="1"/> at time 6
+stepping ctrl at <node id="1"/> at time 7
+stepping ctrl at <node id="1"/> at time 8
+stepping ctrl at <node id="1"/> at time 9
+stepping ctrl at <node id="1"/> at time 10

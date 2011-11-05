@@ -1,0 +1,49 @@
+Reading xml...
+Constructing objects...
+Initializing simulation state...
+node 1 state=10.0
+node 2 state=20.0
+node 3 state=30.0
+
+Running simulation...
+
+=== at time 1 ===
+node 1 state=10.1
+node 2 state=20.2
+node 3 state=30.3
+Observer at node 1
+  node state was undefined at time -2
+Reverser at node 3
+
+=== at time 2 ===
+node 1 state=10.2
+node 2 state=20.4
+node 3 state=30.6
+Observer at node 1
+  node state was undefined at time -1
+Reverser at node 3
+
+=== at time 3 ===
+node 1 state=10.3
+node 2 state=20.6
+node 3 state=30.9
+Observer at node 1
+  node state was 10.0 at time 0
+Reverser at node 3
+
+=== at time 4 ===
+node 1 state=10.4
+node 2 state=20.8
+node 3 state=31.2
+Observer at node 1
+  node state was 10.1 at time 1
+Reverser at node 3
+  reversing, detected node.state=31.2 > thresh=31.0
+
+=== at time 5 ===
+node 1 state=10.5
+node 2 state=21.0
+node 3 state=30.9
+Observer at node 1
+  node state was 10.2 at time 2
+Reverser at node 3

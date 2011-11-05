@@ -1,0 +1,31 @@
+The subdirectories are some ideas for xml-based plug-ins. Each example here is implemented in pure ruby for ease of prototyping. The same architecture could work in java plus jruby (or other jvm languages), but it would require more coding.
+
+Overview:
+
+  v0: as simple as possible
+    - plugin code is embedded in xml
+    - xml objects are modified on the fly to give them simulation behaviors
+    - not really a viable approach, but illustrates how simple this can be
+  
+  v1: a viable implementation of a very simple kind of simulation
+    - plugin code extracted to files to avoid xml errors
+    - plugins define subclasses
+    - plugin instances can have attrs
+    - model objects are separate from xml objects
+    - example controller plugins can:
+      - observe node state
+      - modify node state
+      - maintain internal state specific to plugin class
+
+Requirements:
+
+  - ruby or jruby
+  - gem install nokogiri
+
+In each case, run the simulation like so:
+
+  ruby sim.rb [input_file]
+
+The simulation reads input_file, or input.xml by default.
+
+The output generated from input.xml should match output.txt.
